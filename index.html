@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Special Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    .message {
+      display: none;
+      font-size: 3em;
+      color: red;
+    }
+  </style>
+  <script>
+    function scare() {
+      document.getElementById('message').style.display = 'block';
+      new Audio('https://example.com/scream.mp3').play(); // Add a sound link
+    }
+  </script>
+</head>
+<body onload="setTimeout(scare, 5000)">
+  <h1>I Have a Special Message for You...</h1>
+  <p>Wait for it...</p>
+  <div id="message" class="message">
+    😱 BOO! Got you!
+Marunu Podamunhi.....
+  </div>
+</body>
+</html>
